@@ -10,6 +10,7 @@ By completing this assessment, you will:
 1. Understand the application's functionality by testing it locally.
 2. Learn to create a `Dockerfile` to containerize the application.
 3. Run the application inside a Docker container.
+4. Use Docker Compose to manage a multi-container setup.
 
 ---
 
@@ -20,6 +21,7 @@ Before you begin, make sure you have the following installed:
 - [Python](https://www.python.org/downloads/) (version 3.9 or later)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 - [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ---
 
@@ -84,6 +86,22 @@ Your task is to create a `Dockerfile` to containerize this application. Follow t
 4. **Test the Application in a Container**  
    Open your browser and go to `http://127.0.0.1:5000` to verify that the application runs correctly in a container.
 
+5. **Push the Image to a dockerHub new repo**  
+
+
+---
+
+### Step 4: Adapt the Application to Use MySQL
+To enhance the application, you will persist tasks in a MySQL database.
+
+1. **Modify the Flask App**  
+   Update the Flask application (`main.py`) to connect to a MySQL database and store tasks. Replace the in-memory `tasks` list with database operations.
+
+   Example changes:
+   - Use `mysql.connector` to connect to the database.
+   - Fetch tasks from the database for display.
+   - Insert new tasks into the database.
+
 ---
 
 ## Submission
@@ -98,7 +116,10 @@ Once you have successfully containerized the application:
 ## Hints and Tips
 - Refer to the [Docker Documentation](https://docs.docker.com/) if you need help with Docker commands.
 - Check for errors during the build or run process and debug accordingly.
-- If you are new to Flask or Python, take some time to review the code in `app.py`.
+- If you are new to Flask or Python, take some time to review the code in `main.py`.
+- Test database connectivity using the `mysql` CLI or a GUI client like MySQL Workbench.
+- Check for errors during container startup and debug logs with `docker-compose logs`.
+
 
 ---
 
@@ -108,7 +129,10 @@ By completing this assessment, you will gain hands-on experience in:
 - Writing and understanding `Dockerfile` syntax.
 - Building and running Docker containers.
 - Containerizing a real-world application.
+- Using Docker Compose for multi-container setups.
+- Persisting data in a relational database.
+- Managing real-world application workflows with Docker.
 
 ---
 
-Happy coding! 🚀
+🚀 Happy coding & learning ! 🚀
