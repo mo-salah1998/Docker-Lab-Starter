@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <style>
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f4f9;
+          margin:  100px auto;
+          padding: 30px;
+          width: 40%;
+          justify-content: center;
+          border: 1px solid black;
+      }
+
+      header {
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          text-align: center;
+      }
+
+      h1 {
+          margin: 20px 0px;
+      }
+
+      .container {
+          width: 80%;
+          max-width: 900px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+      }
+
+      h2 {
+          color: #333;
+          margin-top: 0;
+      }
+
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      ul li {
+          background-color: #f0f0f0;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+      }
+
+      form label {
+        margin: auto ;
+        padding: 10px
+      }
+
+      form input {
+          width: 80%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+      }
+
+      form button {
+          width: 15%;
+          padding: 10px;
+          background-color: #FF7900;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+
+      form button:hover {
+          background-color: #FF7900;
+      }
+
+      footer {
+          text-align: center;
+          padding: 10px;
+          background-color: #333;
+          color: white;
+          margin-top: 20px;
+      }
+  </style>
+</head>
+<body>
+    <h1>Task Management</h1>
+    
+    <!-- Display tasks -->
+    <h2>Tasks:</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Form to add a new task -->
+    <h3>Add a new task</h3>
+    <form method="POST" action="/add">
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task" required>
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>
