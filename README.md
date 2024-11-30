@@ -104,6 +104,24 @@ To enhance the application, you will persist tasks in a MySQL database.
 
 ---
 
+### Step 5: Create a Docker Compose Setup
+
+1. **Define `docker-compose.yml`**  
+   Create a `docker-compose.yml` file to manage both the Flask app and the MySQL database.
+
+
+2. **Build and Start Containers**  
+   Use Docker Compose to build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Test the Application**  
+   Open your browser and go to `http://127.0.0.1:5000`. Verify that tasks are stored in the MySQL database.
+
+---
+
+
 ## Submission
 Once you have successfully containerized the application:
 
