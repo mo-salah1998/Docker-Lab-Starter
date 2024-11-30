@@ -104,7 +104,9 @@
     <h2>Tasks:</h2>
     <ul>
         {% for task in tasks %}
-            <li>{{ task }}</li>
+            {% for d in task %}
+            <li>{{ d }}</li>
+        {% endfor %}
         {% endfor %}
     </ul>
 
