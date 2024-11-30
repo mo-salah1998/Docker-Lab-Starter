@@ -43,17 +43,13 @@ To understand the application's functionality:
    cd Docker-Lab-Starter
    ```
 
-2. Install the required Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-3. Run the application:
+2. Run the application:
    ```bash
    python main.py
    ```
 
-4. Open your browser and go to `http://127.0.0.1:5000` to interact with the application.
+3. Open your browser and go to `http://127.0.0.1:5000` to interact with the application.
 
 Take a moment to explore the app and understand what it does.
 
