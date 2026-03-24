@@ -11,6 +11,15 @@ By completing this assessment, you will:
 2. Learn to create a `Dockerfile` to containerize the application.
 3. Run the application inside a Docker container.
 4. Use Docker Compose to manage a multi-container setup.  
+
+
+## Objectives
+
+By completing this assessment, you will:
+1. Understand the application's functionality by testing it locally.
+2. Learn to create a `Dockerfile` to containerize the application.
+3. Run the application inside a Docker container.
+4. Use Docker Compose to manage a multi-container setup. 
 ---
 
 ## Getting Started
