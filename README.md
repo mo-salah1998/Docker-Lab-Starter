@@ -13,6 +13,7 @@ By completing this assessment, you will:
 4. Use Docker Compose to manage a multi-container setup.  
 
 
+<<<<<<< HEAD
 ## Objectives
 
 By completing this assessment, you will:
@@ -34,6 +35,8 @@ By completing this assessment, you will:
 ---
 ## Getting Started
 
+=======
+>>>>>>> 7effcc1 ( fix  : doc numerotaion)
 ### Prerequisites
 Before you begin, make sure you have the following installed:
 - [Python](https://www.python.org/downloads/) (version 3.9 or later)
@@ -43,7 +46,11 @@ Before you begin, make sure you have the following installed:
 
 ---
 
+<<<<<<< HEAD
 ### Step 2: Clone the Repository
+=======
+### Step 0: Clone the Repository
+>>>>>>> 7effcc1 ( fix  : doc numerotaion)
 First, clone the project to your local machine:
 
 ```bash
