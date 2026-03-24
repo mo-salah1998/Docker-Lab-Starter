@@ -22,14 +22,6 @@ By completing this assessment, you will:
 4. Use Docker Compose to manage a multi-container setup. 
 ---
 
-## Objectives
-
-By completing this assessment, you will:
-1. Understand the application's functionality by testing it locally.
-2. Learn to create a `Dockerfile` to containerize the application.
-3. Run the application inside a Docker container.
-4. Use Docker Compose to manage a multi-container setup. 
----
 
 
 ## Objectives
@@ -51,7 +43,7 @@ Before you begin, make sure you have the following installed:
 
 ---
 
-### Step 1: Clone the Repository
+### Step 2: Clone the Repository
 First, clone the project to your local machine:
 
 ```bash
